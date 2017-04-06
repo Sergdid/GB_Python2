@@ -39,7 +39,8 @@ packet = data_cod() + tranz_plat(summ, id_company) # создаем пакет
 
 sock.sendall(bytes(str(packet), 'utf-8'))
 
-# Как со стороны сервира мне из пакета достать все обратно?
+# Как со стороны сервера мне из пакета достать все обратно?
+
 
 
 recvd = str(sock.recv(1024), 'utf-8')
